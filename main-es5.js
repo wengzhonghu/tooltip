@@ -855,6 +855,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/material */
     "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var hammerjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! hammerjs */
+    "./node_modules/hammerjs/hammer.js");
+    /* harmony import */
+
+
+    var hammerjs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_7__);
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
