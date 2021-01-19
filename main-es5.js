@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div>\n  <button mat-raised-button matTooltip='tool tip test' aria-label=\"tool tip test\">\n    Normal Tooltip\n  </button>\n  <button mat-raised-button matTooltip='tool tip test2' matTooltipTouchGestures=\"off\" aria-label=\"tool tip test2\">\n    Gesture Off Tooltip\n  </button>\n  <button  mat-raised-button #tooltip=\"matTooltip\" matTooltip='tool tip test3' aria-label=\"tool tip test3\" (click)=\"toggle($event)\">\n    Toggle Tooltip\n  </button>\n</div>";
+    __webpack_exports__["default"] = "<div>\n  <button mat-raised-button matTooltip='tool tip test' aria-label=\"tool tip test\">\n    Normal Tooltip\n  </button>\n  <button mat-raised-button matTooltip='tool tip test2' matTooltipTouchGestures=\"off\" aria-label=\"tool tip test2\">\n    Gesture Off Tooltip\n  </button>\n  <button mat-raised-button matTooltip='tool tip test3' matTooltipTouchGestures=\"on\" aria-label=\"tool tip test3\">\n    Gesture On Tooltip\n  </button>\n  <!-- <button  mat-raised-button #tooltip=\"matTooltip\" matTooltip='tool tip test3' aria-label=\"tool tip test3\" (click)=\"toggle($event)\">\n    Toggle Tooltip\n  </button> -->\n</div>";
     /***/
   },
 
