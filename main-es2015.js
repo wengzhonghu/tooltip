@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<button  mat-raised-button matTooltip = \"Sample Tooltip\"\naria-label = \"Sample Tooltip\">\n  Action\n</button>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <button mat-raised-button matTooltip='tool tip test' aria-label=\"tool tip test\">\n    Normal Tooltip\n  </button>\n  <button mat-raised-button matTooltip='tool tip test2' matTooltipTouchGestures=\"off\" aria-label=\"tool tip test2\">\n    Gesture Off Tooltip\n  </button>\n  <button  mat-raised-button #tooltip=\"matTooltip\" matTooltip='tool tip test3' aria-label=\"tool tip test3\" (click)=\"toggle($event)\">\n    Toggle Tooltip\n  </button>\n</div>");
 
 /***/ }),
 
@@ -349,9 +349,15 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppComponent = class AppComponent {
     constructor() {
-        this.title = 'tooltiptest';
+        this.title = 'test';
+    }
+    toggle(evt) {
+        this.manualTooltip.toggle();
     }
 };
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('tooltip', { static: true })
+], AppComponent.prototype, "manualTooltip", void 0);
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
@@ -381,11 +387,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_8__);
-
-
 
 
 
@@ -402,12 +403,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatTooltipModule"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"]
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatTooltipModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -486,7 +485,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\testtooltip\tooltiptest\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\testtooltip\test\src\main.ts */"./src/main.ts");
 
 
 /***/ })
