@@ -15,6 +15,8 @@
   </div>
   <div id="testsec2">
   </div>
+  <div id="testsec3">
+  </div>
   <script>
   function getCurrentDatetimeFormat() {
         var timeVal = '2000-11-10 00:00:00';
@@ -34,6 +36,9 @@
 	
 	var sec2 = document.getElementById('testsec2');
 	sec2.innerText = getCurrentDatetimeFormat();
+	
+	var sec3 = document.getElementById('testsec3');
+	sec3.innerText = getCurrentDatetimeFormat(new Date('2000-11-10 00:00:00').toLocaleString());
 	
   </script>
 <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
