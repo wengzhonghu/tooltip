@@ -13,9 +13,28 @@
   <app-root></app-root>
   <div id="testsec">
   </div>
-  <script> 
+  <div id="testsec2">
+  </div>
+  <script>
+  function getCurrentDatetimeFormat() {
+        var timeVal = '2000-11-10 00:00:00';
+        var strTimeVal = new Date(timeVal).toLocaleString();
+        var firstPart = strTimeVal.substr(0,2);
+        if(firstPart == '10') {
+          return 'dmy';
+        } else if(firstPart == '11') {
+          return 'mdy';
+        } else {
+          return "ymd";
+        }
+      }
+	  
 	var sec = document.getElementById('testsec');
 	sec.innerText = new Date().toLocaleString();
+	
+	var sec2 = document.getElementById('testsec2');
+	sec2.innerText = getCurrentDatetimeFormat();
+	
   </script>
 <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
 </html>
